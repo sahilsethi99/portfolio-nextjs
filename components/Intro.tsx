@@ -45,7 +45,7 @@ export default function Intro() {
             </div>
         </div>
 
-        <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        <motion.h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{opacity:0, y:100}}
         animate={{opacity:1,y:0}}
         >
@@ -54,16 +54,21 @@ export default function Intro() {
                   </span> I'm a 
                   <span className="font-bold"> Full-Stack Developer </span>
                   with <span className="font-bold">2.5 </span> years of experience. Confident in <span className="italic underline font-bold">JavaScript-based</span> {"   "}technical roles, my focus remains on delivering dynamic web solutions.
-        </motion.p>
+        </motion.h1>
 
-        <div>
-                <Link href='#contact' className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">Contact me here <BsArrowRight/>{" "}</Link>
-                  <a className="bg-white  px-7 py-3 flex items-center gap-2 rounded-full">Download Resume <HiDownload/></a>
-                  <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"><BsLinkedin/></a>
-                  <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full"><FaGithubSquare/></a>
-                  
+        <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{opacity:0, y:100}}
+        animate={{opacity:1, y:0}}
+        transition={{delay:0.1}}
+        >
+                <Link href='#contact' className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">Contact me here {" "}<BsArrowRight className="group-hover:translate-x-1 transition"/></Link>
+                  <a className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10" href="/SahilSethiResume.pdf" download>Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1"/></a>
+                  <div className="flex gap-2 px-1 justify-center items-center">
+                  <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15]  hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://www.linkedin.com/in/sahil-sethi99/" target="_blank"><BsLinkedin/></a>
+                  <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/sahilsethi99" target="_blank"><FaGithubSquare/></a>
+                  </div>
         
-        </div>
+        </motion.div>
 
     </section>
   )
