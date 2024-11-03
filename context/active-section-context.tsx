@@ -1,8 +1,8 @@
 "use client";
 import React, { createContext, useContext, useState } from 'react'
-import { links } from '@/lib/data';
 
-type SectionName = typeof links[number]["name"];
+import type { SectionName } from '@/lib/types';
+
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 }
@@ -41,4 +41,3 @@ export function useActiveSectionContext(){
   return context;
 }
 
-//paused at 4.03.30 https://www.youtube.com/watch?v=sUKptmUVIBM
