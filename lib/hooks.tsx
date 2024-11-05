@@ -18,5 +18,6 @@ export default function useSectionInView(
 
     return{
         ref,
+        inView
     }
 }
