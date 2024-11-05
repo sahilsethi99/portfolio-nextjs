@@ -13,10 +13,10 @@ import useSectionInView from "@/lib/hooks";
 
 
 export default function Experience() {
-//   const { ref,inView } = useSectionInView("Experience",0.2);
+  const { ref,inView } = useSectionInView("Experience",0.2);
 
   return (
-    <section  id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+    <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline className="vertical-timeline vertical-timeline-custom">
             {experiencesData.map((experienceItem, index) => (
