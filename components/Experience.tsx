@@ -18,7 +18,7 @@ export default function Experience() {
   return (
     <section  id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="" >
+      <VerticalTimeline className="vertical-timeline vertical-timeline-custom">
             {experiencesData.map((experienceItem, index) => (
                 <React.Fragment key={index}>
                     <VerticalTimelineElement
@@ -50,6 +50,11 @@ export default function Experience() {
                 </React.Fragment>
             ))}
         </VerticalTimeline>
+        <style jsx>{`
+        .vertical-timeline::before {
+          background-color: var(--line-color) !important;
+        }
+      `}</style>
     </section>
   );
 }

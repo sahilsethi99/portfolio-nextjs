@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;    
 
-html  {
-    --line-color: #e5e7eb;
+/* In globals.css */
+.vertical-timeline-custom::before {
+    background-color: #e5e7eb !important; /* Your desired line color */
 }
 
