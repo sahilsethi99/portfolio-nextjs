@@ -71,9 +71,9 @@ export default function Intro() {
                   setActiveSection("Contact");
                   setTimeOfLastClick(Date.now());
                   }}>Contact me here {" "}<BsArrowRight className="group-hover:translate-x-1 transition"/></Link>
-                  <a className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10" href="/SahilSethiResume.pdf" download>Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1"/></a>
+                  <a className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60" href="/SahilSethiResume.pdf" download>Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1"/></a>
                   <div className="flex gap-2 px-1 justify-center items-center">
-                  <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15]  hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://www.linkedin.com/in/sahil-sethi99/" target="_blank"><BsLinkedin/></a>
+                  <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15]  hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60" href="https://www.linkedin.com/in/sahil-sethi99/" target="_blank"><BsLinkedin/></a>
                   <a className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/sahilsethi99" target="_blank"><FaGithubSquare/></a>
                   </div>
         
